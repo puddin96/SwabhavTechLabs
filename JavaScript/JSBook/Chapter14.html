@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSBookChapter13</title>
+</head>
+<body>
+    <script>
+        var groceries=["milk","eggs","fruits","vegitables"];
+        for(var i=0;i<groceries.length;i++){
+        document.writeln(groceries[i]);
+        }
+        document.writeln("<br>");
+        groceries.push("choclate");
+        document.writeln(groceries.toString()+"<br>");
+        groceries.unshift("Bananas");
+        document.writeln(groceries.toString()+"<br>");
+        groceries.pop();
+        document.writeln(groceries.toString()+"<br>");
+        groceries.shift();
+        document.writeln(groceries.toString()+"<br>");
+
+        var s=["a","b","c","d"];
+        var d=["e","f","g","h"];
+        var sandd=s.concat(d);
+        alert(sandd);
+    </script>
+</body>
+</html>

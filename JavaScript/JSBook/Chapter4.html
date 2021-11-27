@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSBookChapter4</title>
+</head>
+<body>
+    <script>
+        var SpeedLimit = 55;
+        function AmISpeeding(speed)
+        {
+            if(speed >= SpeedLimit)
+            {
+                alert("Yes. You are speeding.");
+            }
+             else 
+            {
+                alert("No. You are not speeding. What's wrong with you?");
+            }
+            
+        }
+        AmISpeeding(60);
+        AmISpeeding(52);
+
+        //switchCaseSraersFromHere------>
+
+        var Color = "Red";
+
+        switch(Color)
+        {
+            case "Yellow" :
+                alert ("Yellow Color");
+                break;
+            case "Red" :
+                alert ("Red Color");
+                break;
+            case "Blue" :
+                alert ("Blue Color");
+                break;
+            case "Black" :
+                alert ("Black Color");
+                break;
+            default :
+                alert ("NoColorMatched");
+        }
+
+    </script>
+</body>
+</html>

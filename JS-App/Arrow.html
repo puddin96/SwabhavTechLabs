@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var numbers = [10,20,30,40,50,60];
+        numbers.forEach(n => console.log(n) );
+
+        numbers.filter( n => n>25 )
+            .forEach( n => console.log(n));
+        
+        var numbers = ["10", "20", "30","40","50","60"];
+        numbers.map( n => parseInt(n))
+            .filter( n => n>50)
+            .forEach( n => console.log(n));
+    </script>
+</body>
+</html>

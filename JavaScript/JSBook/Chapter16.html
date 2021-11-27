@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSBookChapter16</title>
+</head>
+<body>
+    <script>
+        var funnyGuy = {
+            FirstName : "Shivam",
+            LastName : "Sutar",
+            Address : "Mumbai , Maharashtra",
+
+            GetName : function(){
+                return "Name is " + this.FirstName + " " + this.LastName;
+            },
+            GetAddress : function(){
+                return "Address of " + this.FirstName + this.LastName + " is " + this.Address;
+            }
+        };
+
+        alert(funnyGuy.GetName());
+        alert(funnyGuy.GetAddress());
+
+        var theDude = {
+            FirstName : "Ketki",
+            LastName : "Keni",
+
+            GetName : function(){
+                return "Nmae is " + this.FirstName + " " + this.LastName;
+            }
+        };
+        var detective = {
+            FirstName : "Sagar",
+            LastName : "Avhad",
+
+            GetName : function(){
+                return "Nmae is " + this.FirstName + " " + this.LastName;
+            }
+        };
+        var person = {
+            GetName : function(){
+                return "Name is " + this.FirstName + " " + this.LastName;
+            }
+        };
+
+        var funnyGuy = Object.create(person);
+        funnyGuy.FirstName = "shivam";
+        funnyGuy.LastName = "sutar";
+        alert(funnyGuy.GetName());
+    </script>
+</body>
+</html>

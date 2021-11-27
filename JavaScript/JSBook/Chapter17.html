@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSBookChapter17</title>
+</head>
+<body>
+    <script>
+
+        Array.prototype.shuffle = function(){
+            var input = this;
+
+            for(var i = input.length-1; i >= 0; i--){
+                var randomIndex = Math.floor(Math.random() *(i+1));
+                var itemAtIndex = input[randomIndex];
+                input[randomIndex] = input[i];
+                input[i] = itemAtIndex;
+            }
+            return input;
+        }
+        function shuffle(){
+            
+        }
+        
+        var tempArray = [1,2,3,4,5,6,8,7,8,9];
+        alert(tempArray.shuffle());
+        
+    </script>
+    <script>
+        var arr = [45,55,65,8];
+        alert(arr.shuffle());
+    </script>
+</body>
+</html>

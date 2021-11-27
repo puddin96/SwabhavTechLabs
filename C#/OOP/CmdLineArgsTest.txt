@@ -1,0 +1,9 @@
+//CmdLineArgsTest.cs
+
+CmdLineArgsTest.exe nelson vinay aurionpro swabhav
+
+class CmdLineArgsTest {
+
+	Main(string[] names){
+
+

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSBookChapter18</title>
+</head>
+<body>
+    <script>
+        var bool=Boolean(null);
+        document.write(bool+"<br>");
+        var bool=Boolean(undefined);
+        document.write(bool+"<br>");
+        var bool=Boolean();
+        document.write(bool+"<br>");
+        var bool=Boolean("");
+        document.write(bool+"<br>");
+        var bool=Boolean(NaN);
+        document.write(bool+"<br>");
+        var bool=Boolean(false);
+        document.write(bool+"<br>");
+        var bool=Boolean(true);
+        document.write(bool+"<br>");
+        var bool=Boolean(20);
+        document.write(bool+"<br>");
+        var bool=Boolean(0);
+        document.write(bool+"<br>");
+        var bool=Boolean(-500);
+        document.write(bool+"<br>");
+        var bool=Boolean("Hello");
+        document.write(bool+"<br>");
+        var bool=Boolean("I am"+"Sagar");
+        document.write(bool+"<br>");
+        var bool=Boolean(new Boolean());
+       document.write(bool+"<br>");
+
+       var boolObject=new Boolean(false);
+       if(boolObject){
+           document.write("function called")
+       }
+    </script>
+</body>
+</html>

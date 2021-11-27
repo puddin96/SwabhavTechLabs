@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="InventoryGuitarApp.Program">
+    <Position X="1.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAEAABAAAACA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InventoryGuitarApp.Model.Inventory">
+    <Position X="3.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMgIAA=</HashCode>
+      <FileName>Model\Inventory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InventoryGuitarApp.Model.Guitar">
+    <Position X="4.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAgAAACiACAEABAAAIAwAAAAAAIQ=</HashCode>
+      <FileName>Model\Guitar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="InventoryGuitarApp.Enums.Builder">
+    <Position X="6.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAgAAAABAAAAAAAACQAAAAAIAAAAAAEAAAEAAAA=</HashCode>
+      <FileName>Enums\Builder.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="InventoryGuitarApp.Enums.GTypes">
+    <Position X="7.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAQQAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Enums\GTypes.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="InventoryGuitarApp.Enums.Wood">
+    <Position X="9.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAQABAABAAAAAAAAAAAAAAEAACAACAQAAAAAAAAA=</HashCode>
+      <FileName>Enums\Wood.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
