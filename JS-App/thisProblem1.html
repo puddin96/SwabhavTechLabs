@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Customer(id,name)
+        {
+            this.id=id;
+            this.name=name;
+
+            this.show=function()
+            {
+                console.log("name of customer is "+ this.name + " id is "+ this.id);
+            }
+        }
+        var sachin=new Customer(1001,"sachin");
+        sachin.show();
+
+        var ref_sachins_show=sachin.show.bind(sachin);
+        ref_sachins_show();
+    </script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>  
+    <canvas id="myCanvas" width="10000" height="750" style="border:1px solid #00ff37;">.</canvas>
+    <style>
+        .slidecontainer 
+        {
+            width: 25%;
+            margin: auto;
+            /*margin-bottom: 0;
+            margin-top: 0;
+            margin-left: 0;
+            margin-right: 0;*/
+        }
+
+        .slider 
+        {
+            -webkit-appearance: none;
+            width: 100%;
+            height: 15px;
+            border-radius: 5px;
+            background: #2600ff;
+            outline: none;
+            opacity: 0.9;
+            -webkit-transition: .2s;
+            transition: opacity .2s;
+            
+        }
+
+        .slider:hover 
+        {
+            opacity: 1;
+        }
+
+        .slider::-webkit-slider-thumb 
+        {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background: #ff0000;
+            cursor: pointer;
+        }
+
+        .slider::-moz-range-thumb 
+        {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background: #04AA6D;
+            cursor: pointer;
+        }
+
+        .fullCircle
+        {
+            width: 100px;
+            height:100px;
+            bordeR: 1px solid;
+            border-radius: 50%;
+            background-color: #f00;
+        }
+        /*.slidecontainer {
+          width: 25%;
+          margin: auto;
+        }
+        
+        .slider {
+          -webkit-appearance: none;
+          width: 100%;
+          height: 25px;
+          background: #2bff00;
+          outline: none;
+          opacity: 0.7;
+          -webkit-transition: .2s;
+          transition: opacity .2s;
+        }
+        
+        .slider:hover {
+          opacity: 0.5;
+        }
+        
+        .slider::-webkit-slider-thumb {
+          -webkit-appearance: none;
+          appearance: none;
+          width: 25px;
+          height: 25px;
+          background: #ff0505;
+          cursor: pointer;
+        }
+        
+        .slider::-moz-range-thumb {
+          width: 25px;
+          height: 25px;
+          background: #0400ff;
+          cursor: pointer;
+        }*/
+        </style>
+      <div class="slidecontainer">
+        <input type="range" min="5" max="10" value="0" class="slider" id="myRange">
+        <h1>Number of Balls: <span id="demo"></span></h1>
+      </div>
+    
+    <script>
+        var slider = document.getElementById("myRange");
+        var output = document.getElementById("demo");
+        output.innerHTML = slider.value;
+
+        slider.oninput = function() 
+        {
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+            var x = 100 , y = 50;
+            for(var i = 0; i < slider.value; i++)
+            {   
+                function fillCircle(x, y, radius, color) 
+                {
+
+                    ctx.fillStyle = color;
+
+                    ctx.beginPath();
+                    ctx.arc(x + i*50, y, 15, 0, 2 * Math.PI);
+                    ctx.stroke();
+                    //ctx.arc(x, y, radius, 0, 2 * Math.PI);
+                    ctx.fill();
+                }
+                fillCircle(100, 100, 80, 'blue');
+                /*ctx.beginPath();
+                ctx.arc(x + i*50, y, 15, 0, 2 * Math.PI);
+                ctx.stroke();*/
+            }
+        output.innerHTML = this.value;
+        }
+
+        
+        
+    </script>
+</body>
+</html>
